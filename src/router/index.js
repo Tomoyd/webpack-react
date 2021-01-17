@@ -6,6 +6,11 @@ const routes = [
     path: "/",
     component: () => import("../pages/Home"),
     exact: true
+  },
+  {
+    path: "/about",
+    component: () => import("../pages/about"),
+    exact: true
   }
 ];
 
