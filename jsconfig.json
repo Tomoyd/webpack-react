@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonJs",
+    "checkJs": true,
+
+    "jsx": "preserve",
+    "baseUrl": "/"
+  },
+  "include": ["./src", "./css.d.ts"],
+  "exclude": ["node_modules/", "/**/*.less", "dist/"]
+}
