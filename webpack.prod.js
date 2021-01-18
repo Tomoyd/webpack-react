@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpackCommon = require("./webpack.common");
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 // @ts-ignore
 module.exports = merge(webpackCommon, {
   mode: "production",
@@ -18,6 +19,7 @@ module.exports = merge(webpackCommon, {
     new MiniCssExtractPlugin({
       filename: "[name].css"
     }),
-    new HtmlWebpackPlugin({ template: "./index.html" })
+    new HtmlWebpackPlugin({ template: "./index.html" }),
+    new BundleAnalyzerPlugin()
   ]
 });

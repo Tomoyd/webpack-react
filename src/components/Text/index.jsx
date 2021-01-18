@@ -1,5 +1,6 @@
+import styles from "./index.less";
 const Text = () => {
-  return <div>text123</div>;
+  return <div className={styles.text}>text123</div>;
 };
 
 export default Text;

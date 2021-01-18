@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom";
 import Layout from "../../components/layout";
+import Text from "../../components/Text";
 import useStore from "../../hooks/useStore";
 import styles from "./home.less";
 
@@ -13,7 +14,10 @@ const Home = () => {
   };
   return (
     <Layout className={styles.text} title='home'>
-      <div onClick={handleClick}>hello this is home{value}</div>
+      <div onClick={handleClick}>
+        hello this is home{value}
+        <Text></Text>
+      </div>
     </Layout>
   );
 };
