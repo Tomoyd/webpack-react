@@ -4,6 +4,7 @@ import Router from "./router";
 import StoreProvider from "./store";
 
 const App = () => {
+  const b = 1 + "";
   return (
     <Suspense fallback={null}>
       <BrowserRouter>
