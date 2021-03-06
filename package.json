@@ -17,7 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn lint-staged"
     }
   },
   "devDependencies": {
@@ -47,7 +47,6 @@
     "postcss-loader": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
     "postcss-short": "^5.0.0",
-    "pre-commit": "^1.2.2",
     "prettier": "^2.2.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.15.0",
