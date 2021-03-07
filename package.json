@@ -8,7 +8,7 @@
   "license": "MIT",
   "publisher": "tomoyd",
   "scripts": {
-    "build": "webpack --config webpack.ui.js",
+    "build": "webpack --config webpack.ui.js && yarn babel",
     "deploy": "npm publish --access public",
     "babel": "babel src/components --out-dir es "
   },
